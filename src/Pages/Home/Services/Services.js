@@ -12,11 +12,16 @@ const Services = () => {
     }, [])
 
     return (
-        <div className='services-container'>
-            {
-                services.map(service => <Service service={service} key={service.id}></Service>)
-            }
+        <div className='my-3'>
+            <h3 className='text-primary'>Our Services</h3>
+            <div className='services-container'>
+
+                {
+                    services.map(service => <Service service={service} key={service.id}></Service>)
+                }
+            </div>
         </div>
+
     );
 };
 
