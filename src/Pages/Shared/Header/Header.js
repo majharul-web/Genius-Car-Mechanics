@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
+   
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
@@ -16,6 +16,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#experts">Experts</Nav.Link>
                             {user?.email ?

@@ -13,12 +13,13 @@ const useFirebase = () => {
 
   // google sing in
   const googleSingIn = () => {
-      setIsLoading(true);
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        console.log(result.user);
-      })
-      .finally(() => setIsLoading(false));
+    //   setIsLoading(true);
+    return signInWithPopup(auth, provider)
+
+    //   .then((result) => {
+    //     console.log(result.user);
+    //   })
+    //   .finally(() => setIsLoading(false));
   };
 
   // singOut
