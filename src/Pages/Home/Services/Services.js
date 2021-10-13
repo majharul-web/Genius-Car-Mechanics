@@ -12,7 +12,7 @@ const Services = () => {
     }, [])
 
     return (
-        <div className='my-3'>
+        <div id='services' className='my-3'>
             <h3 className='text-primary'>Our Services</h3>
             <div className='services-container'>
 
