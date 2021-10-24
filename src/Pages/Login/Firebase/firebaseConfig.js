@@ -1,10 +1,10 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC_nBnAfWN5CP0iMMPVfvhcyrmAhT93EAY",
-    authDomain: "genius-car-mechanics-fbc7d.firebaseapp.com",
-    projectId: "genius-car-mechanics-fbc7d",
-    storageBucket: "genius-car-mechanics-fbc7d.appspot.com",
-    messagingSenderId: "883844430280",
-    appId: "1:883844430280:web:53515e48d75569ca0168fd"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_API_ID,
 };
 export default firebaseConfig;
